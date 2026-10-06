@@ -14,4 +14,9 @@ public class LeapYearTest {
     void shouldReturnFalseForYearDivisibleBy100ButNot400() {
         assertFalse(LeapYear.isLeapYear(1900));
     }
+
+    @Test
+    void shouldReturnTrueForYearDivisibleBy4ButNot100() {
+        assertTrue(LeapYear.isLeapYear(2012));
+    }
 }
